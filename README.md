@@ -56,7 +56,7 @@ Commercial, cloud-hosted test execution grids and automated cross-browser/device
 
 Community-driven test automation frameworks, browser drivers, and test execution environments. The table below is sorted in descending order of GitHub star popularity.
 
-| 📦 Project | ⭐ GitHub Stars | 💻 Primary Language / Stack | 📜 License | 🔍 Core Focus & Architecture |
+| 📦 Project | ⭐ GitHub_Stars | 💻 Primary Language / Stack | 📜 License | 🔍 Core Focus & Architecture |
 |---|---|---|---|---|
 | **[Playwright](https://github.com/microsoft/playwright)** | [![Playwright Stars](https://img.shields.io/github/stars/microsoft/playwright?style=social&color=white)](https://github.com/microsoft/playwright/stargazers) | TypeScript, JavaScript, Python, C#, Java | Apache 2.0 | Next-generation cross-browser E2E testing (Chromium, WebKit, Firefox) via internal browser socket connections with built-in auto-waiting, network mocking, and execution tracing. |
 | **[Puppeteer](https://github.com/puppeteer/puppeteer)** | [![Puppeteer Stars](https://img.shields.io/github/stars/puppeteer/puppeteer?style=social&color=white)](https://github.com/puppeteer/puppeteer/stargazers) | JavaScript, TypeScript (Node.js) | Apache 2.0 | High-level Chrome DevTools Protocol (CDP) node library for headful/headless Chromium automation, web crawling, and lightweight rendering validation. |
@@ -127,7 +127,7 @@ Contributions are always welcome! To add another open-source testing tool or clo
 
 1. Fork this repository.
 2. Verify that the project is actively maintained (active releases or commits within the last 12 months).
-3. Ensure open-source entries include the correct GitHub star badge linked to its `/stargazers` page.
+3. Ensure open-source entries include the correct GitHub Stars_Badge linked to its `/stargazers` page.
 4. Submit a Pull Request with a clear description and categorization.
 
 ---
