@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="45%" stop-color="#0d1829" />
+      <stop offset="100%" stop-color="#050a14" />
+    </linearGradient>
+
+    <linearGradient id="primaryGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+
+    <linearGradient id="pillCypress" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+
+    <linearGradient id="pillPlaywright" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <linearGradient id="pillSelenium" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+
+    <linearGradient id="pillCloud" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+
+    <linearGradient id="gridLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0" />
+    </linearGradient>
+
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .code-font { font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace; }
+    .ui-font { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.35; transform: scale(1); }
+      50% { opacity: 0.65; transform: scale(1.08); }
+    }
+    
+    @keyframes scanline {
+      0% { transform: translateY(-50px); opacity: 0; }
+      20% { opacity: 0.8; }
+      80% { opacity: 0.8; }
+      100% { transform: translateY(380px); opacity: 0; }
+    }
+
+    @keyframes floatPill1 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-7px); }
+    }
+    @keyframes floatPill2 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(7px); }
+    }
+    @keyframes floatPill3 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-5px); }
+    }
+    @keyframes floatPill4 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(6px); }
+    }
+
+    .ambient-sphere {
+      animation: pulseGlow 7s ease-in-out infinite alternate;
+      transform-origin: center;
+    }
+    .scanner {
+      animation: scanline 8s linear infinite;
+    }
+    .pill-1 { animation: floatPill1 4.5s ease-in-out infinite; }
+    .pill-2 { animation: floatPill2 5.2s ease-in-out infinite; }
+    .pill-3 { animation: floatPill3 4.8s ease-in-out infinite; }
+    .pill-4 { animation: floatPill4 5.6s ease-in-out infinite; }
+  </style>
+
+  <!-- Deep Canvas Background -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGradient)" stroke="#1e293b" stroke-width="1.5" />
+
+  <!-- Ambient Light Orbs (Background layer) -->
+  <circle cx="200" cy="90" r="140" fill="#38bdf8" opacity="0.12" filter="url(#subtleGlow)" class="ambient-sphere" />
+  <circle cx="1020" cy="270" r="160" fill="#ec4899" opacity="0.10" filter="url(#subtleGlow)" class="ambient-sphere" style="animation-delay: -3.5s;" />
+  <circle cx="600" cy="180" r="180" fill="#6366f1" opacity="0.08" filter="url(#subtleGlow)" class="ambient-sphere" style="animation-delay: -2s;" />
+
+  <!-- Geometric Grid Pattern (Background) -->
+  <g opacity="0.12" stroke="#94a3b8" stroke-width="0.8">
+    <line x1="80" y1="0" x2="80" y2="360" stroke-dasharray="4,6" />
+    <line x1="280" y1="0" x2="280" y2="360" stroke-dasharray="4,6" />
+    <line x1="480" y1="0" x2="480" y2="360" stroke-dasharray="4,6" />
+    <line x1="680" y1="0" x2="680" y2="360" stroke-dasharray="4,6" />
+    <line x1="880" y1="0" x2="880" y2="360" stroke-dasharray="4,6" />
+    <line x1="1080" y1="0" x2="1080" y2="360" stroke-dasharray="4,6" />
+    
+    <line x1="0" y1="60" x2="1200" y2="60" stroke-dasharray="4,6" />
+    <line x1="0" y1="180" x2="1200" y2="180" stroke-dasharray="4,6" />
+    <line x1="0" y1="300" x2="1200" y2="300" stroke-dasharray="4,6" />
+  </g>
+
+  <!-- Scanning Laser Line (Background dynamic element) -->
+  <line x1="60" y1="0" x2="1140" y2="0" stroke="url(#gridLine)" stroke-width="2" class="scanner" />
+
+  <!-- Code/Terminal Watermark Element (Background right) -->
+  <g opacity="0.18" class="code-font" fill="#38bdf8" font-size="12">
+    <text x="860" y="55">const { test, expect } = require('@playwright/test');</text>
+    <text x="860" y="75">cy.visit('https://app.dev');</text>
+    <text x="860" y="95">driver.manage().timeouts().implicitlyWait(...);</text>
+  </g>
+
+  <!-- FOREGROUND CONTENT: Header Title & Subtitle -->
+  <g>
+    <!-- Tagline Badge -->
+    <g transform="translate(100, 48)">
+      <rect width="260" height="28" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <circle cx="16" cy="14" r="5" fill="#10b981" />
+      <text x="32" y="18" fill="#94a3b8" font-size="11.5" font-weight="600" letter-spacing="1.2" class="ui-font">ENTERPRISE QA &amp; AUTOMATION</text>
+    </g>
+
+    <!-- Main Title (Gradient Fill, Crisp & Dominant Foreground) -->
+    <text x="100" y="128" fill="url(#primaryGlow)" font-size="44" font-weight="900" letter-spacing="-0.5" class="ui-font" filter="url(#subtleGlow)">
+      Awesome Testing Frameworks
+    </text>
+
+    <!-- Subtitle (Clear, Non-overlapping) -->
+    <text x="100" y="168" fill="#f8fafc" font-size="21" font-weight="600" class="ui-font">
+      Selenium • Cypress • Playwright • Appium • Cloud Testing Platforms
+    </text>
+
+    <!-- Description Paragraph -->
+    <text x="100" y="202" fill="#94a3b8" font-size="14.5" font-weight="400" class="ui-font">
+      Curated cross-browser orchestration, cloud device grids, headless runners, and CI/CD automation.
+    </text>
+
+    <!-- Interactive / Dynamic Status Pills (Positioned safely below text) -->
+    <g transform="translate(100, 240)">
+      <!-- Pill 1: Playwright -->
+      <g class="pill-1" transform="translate(0, 0)">
+        <rect width="180" height="42" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2" />
+        <rect x="6" y="6" width="30" height="30" rx="7" fill="url(#pillPlaywright)" />
+        <text x="21" y="26" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle" class="ui-font">🎭</text>
+        <text x="46" y="22" fill="#ffffff" font-size="13" font-weight="700" class="ui-font">Playwright</text>
+        <text x="46" y="34" fill="#38bdf8" font-size="10.5" font-weight="600" class="code-font">vLatest • Fast</text>
+      </g>
+
+      <!-- Pill 2: Cypress -->
+      <g class="pill-2" transform="translate(200, 0)">
+        <rect width="180" height="42" rx="10" fill="#0f172a" stroke="#10b981" stroke-width="1.2" />
+        <rect x="6" y="6" width="30" height="30" rx="7" fill="url(#pillCypress)" />
+        <text x="21" y="26" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle" class="ui-font">🌲</text>
+        <text x="46" y="22" fill="#ffffff" font-size="13" font-weight="700" class="ui-font">Cypress</text>
+        <text x="46" y="34" fill="#34d399" font-size="10.5" font-weight="600" class="code-font">In-Browser E2E</text>
+      </g>
+
+      <!-- Pill 3: Selenium -->
+      <g class="pill-3" transform="translate(400, 0)">
+        <rect width="180" height="42" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="1.2" />
+        <rect x="6" y="6" width="30" height="30" rx="7" fill="url(#pillSelenium)" />
+        <text x="21" y="26" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle" class="ui-font">🌐</text>
+        <text x="46" y="22" fill="#ffffff" font-size="13" font-weight="700" class="ui-font">Selenium</text>
+        <text x="46" y="34" fill="#fbbf24" font-size="10.5" font-weight="600" class="code-font">W3C WebDriver</text>
+      </g>
+
+      <!-- Pill 4: Cloud SaaS Grids -->
+      <g class="pill-4" transform="translate(600, 0)">
+        <rect width="210" height="42" rx="10" fill="#0f172a" stroke="#a855f7" stroke-width="1.2" />
+        <rect x="6" y="6" width="30" height="30" rx="7" fill="url(#pillCloud)" />
+        <text x="21" y="26" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle" class="ui-font">☁️</text>
+        <text x="46" y="22" fill="#ffffff" font-size="13" font-weight="700" class="ui-font">Cloud Testing SaaS</text>
+        <text x="46" y="34" fill="#c084fc" font-size="10.5" font-weight="600" class="code-font">Real Devices &amp; Grids</text>
+      </g>
+    </g>
+
+    <!-- Bottom Metrics Strip -->
+    <g transform="translate(100, 312)">
+      <circle cx="6" cy="6" r="4" fill="#38bdf8" />
+      <text x="18" y="10" fill="#64748b" font-size="12" class="ui-font">Curated with Star Ratings, Pricing &amp; Architectural Matrix</text>
+    </g>
+  </g>
+</svg>

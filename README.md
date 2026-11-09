@@ -1,28 +1,38 @@
-# Awesome Testing Framework Integrations: Selenium, Cypress, Playwright & Cloud Automation
+<p align="center">
+  <img src="./assets/banner.svg" alt="Awesome Testing Framework Integrations Banner" width="100%" />
+</p>
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://makeapullrequest.com)
+# 🧪 Awesome Testing Framework Integrations: Selenium, Cypress, Playwright & Cloud Automation 🚀
 
-> A curated directory and architectural guide to top **Testing Framework Integrations** — featuring enterprise SaaS cloud testing platforms, managed browser grids, and open-source automation frameworks for **Playwright, Cypress, Selenium, Appium**, and modern QA workflows.
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://awesome.re/badge.svg" alt="Awesome List" /></a>
+  <a href="http://creativecommons.org/publicdomain/zero/1.0/"><img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg" alt="License: CC0-1.0" /></a>
+  <a href="https://makeapullrequest.com"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+> 🌟 A curated directory and architectural guide to top **Testing Framework Integrations** — featuring enterprise SaaS cloud testing platforms, managed browser grids, and open-source automation frameworks for **Playwright, Cypress, Selenium, Appium**, and modern QA workflows.  
 > 
-> 🌟 *Star this repository if you find it helpful!* 🌟
+> ⭐ *Star this repository if you find it helpful!* ⭐
 
 ---
 
-## 📋 Table of Contents
+## 📋 Table of Contents 📑
 
-- [Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
-- [SaaS & Cloud Testing Platforms](#-saas--cloud-testing-platforms)
-- [Open-Source Software & Frameworks](#-open-source-software--frameworks)
-- [Framework Feature Matrix](#-framework-feature-matrix)
-- [Architecture & Integration Patterns](#-architecture--integration-patterns)
-- [Contributing](#-contributing)
-- [License](#-license)
+- [🌐 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS & Cloud Testing Platforms](#️-saas--cloud-testing-platforms)
+- [💻 Open-Source Software & Frameworks](#-open-source-software--frameworks)
+- [📊 Framework Feature Matrix](#-framework-feature-matrix)
+- [💡 Architecture & Integration Patterns](#-architecture--integration-patterns)
+- [📈 Star History](#-star-history)
+- [💖 Support & Community](#-support--community)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
 
 ---
 
-## 🌐 Sector Overview & Market Dynamics
+## 🌐 Sector Overview & Market Dynamics 📈
 
 The global **cloud testing and test automation market** is valued between **$13 Billion and $24 Billion** (with cloud testing at ~$13–14B and broader software test automation exceeding $20B), expanding at a compound annual growth rate (CAGR) of **11.2% to 16.9%** toward a projected **$35B–$80B+** by the early 2030s.
 
@@ -30,11 +40,11 @@ The sector is **moderately to highly fragmented**: while foundational driver eco
 
 ---
 
-## 🟦 SaaS & Cloud Testing Platforms
+## ☁️ SaaS & Cloud Testing Platforms 🚀
 
 Commercial, cloud-hosted test execution grids and automated cross-browser/device testing platforms. The table below is sorted in descending order of company scale (valuation / enterprise revenue).
 
-| Platform | Valuation / Revenue Scale | Starting Price | Free Tier / Trial Limits | Key Framework Integrations | Best For |
+| 🏢 Platform | 💰 Valuation / Revenue Scale | 🏷️ Starting Price | 🎁 Free Tier / Trial Limits | 🔌 Key Framework Integrations | 🎯 Best For |
 |---|---|---|---|---|---|
 | **[BrowserStack Automate](https://www.browserstack.com/automate)** | **~$4.0B Valuation** (~$230M ARR) | **$129/mo** (billed annually; 1 parallel session) | **60-minute Free Trial** (no credit card required; free plans available for verified open-source projects) | Playwright, Cypress, Selenium WebDriver, Puppeteer, Appium, WebdriverIO | Enterprise-grade managed cloud browser & real-device grid at global scale |
 | **[Sauce Labs](https://saucelabs.com/)** | **~$613M Valuation** (~$100M Revenue) | **$39/mo** (Live testing, billed annually; Automated Virtual Device Cloud starts at $149/mo) | **28-Day Free Trial** (60 automated/live testing minutes, up to 3 parallel VMs, 50 Sauce AI queries) | Selenium 4+ (CDP/BiDi), Cypress, Playwright, TestCafe, WebdriverIO, Appium | Mature enterprise test execution with Chrome DevTools Protocol (CDP) & BiDi debugging |
@@ -42,11 +52,11 @@ Commercial, cloud-hosted test execution grids and automated cross-browser/device
 
 ---
 
-## 🟩 Open-Source Software & Frameworks
+## 💻 Open-Source Software & Frameworks 🛠️
 
 Community-driven test automation frameworks, browser drivers, and test execution environments. The table below is sorted in descending order of GitHub star popularity.
 
-| Project | GitHub Stars | Primary Language / Stack | License | Core Focus & Architecture |
+| 📦 Project | ⭐ GitHub Stars | 💻 Primary Language / Stack | 📜 License | 🔍 Core Focus & Architecture |
 |---|---|---|---|---|
 | **[Playwright](https://github.com/microsoft/playwright)** | [![Playwright Stars](https://img.shields.io/github/stars/microsoft/playwright?style=social&color=white)](https://github.com/microsoft/playwright/stargazers) | TypeScript, JavaScript, Python, C#, Java | Apache 2.0 | Next-generation cross-browser E2E testing (Chromium, WebKit, Firefox) via internal browser socket connections with built-in auto-waiting, network mocking, and execution tracing. |
 | **[Puppeteer](https://github.com/puppeteer/puppeteer)** | [![Puppeteer Stars](https://img.shields.io/github/stars/puppeteer/puppeteer?style=social&color=white)](https://github.com/puppeteer/puppeteer/stargazers) | JavaScript, TypeScript (Node.js) | Apache 2.0 | High-level Chrome DevTools Protocol (CDP) node library for headful/headless Chromium automation, web crawling, and lightweight rendering validation. |
@@ -65,9 +75,9 @@ Community-driven test automation frameworks, browser drivers, and test execution
 
 ---
 
-## 📊 Framework Feature Matrix
+## 📊 Framework Feature Matrix ⚙️
 
-| Engine | Primary Architecture | Execution Model | Native Auto-Wait | Cross-Browser Coverage | Mobile App Automation |
+| 🧩 Engine | 🏗️ Primary Architecture | ⚡ Execution Model | ⏳ Native Auto-Wait | 🌐 Cross-Browser Coverage | 📱 Mobile App Automation |
 |---|---|---|---|---|---|
 | **Microsoft Playwright** | CDP / WebKit / Firefox WebSocket | Out-of-Process Socket | ✅ Yes | Chromium, Firefox, WebKit | Emulation only |
 | **Cypress** | In-Browser Execution Loop | Inside DOM Runtime | ✅ Yes | Chromium, Firefox, WebKit (Exp.) | Emulation only |
@@ -78,7 +88,7 @@ Community-driven test automation frameworks, browser drivers, and test execution
 
 ---
 
-## 💡 Architecture & Integration Patterns
+## 💡 Architecture & Integration Patterns 🧩
 
 When selecting or integrating a modern testing framework stack, teams typically adopt one of three primary architectural integration models:
 
@@ -92,7 +102,26 @@ When selecting or integrating a modern testing framework stack, teams typically 
 
 ---
 
-## 🤝 Contributing
+## 💖 Support & Community 🙏
+
+Thank you so much for exploring this curated testing framework guide! If this project helps streamline your QA strategy, browser automation pipeline, or engineering workflows, here are a few great ways to support it:
+
+- ⭐ **Star this repository** to help other engineers and QA teams discover it.
+- 🍴 **Fork the repo** to contribute new benchmarks, framework adapters, and cloud integrations.
+- 📢 **Share with your team** and automation community on LinkedIn, X, or Discord.
+- ☕ **Buy a coffee or sponsor ongoing maintenance**:  
+  [![GitHub Sponsors](https://img.shields.io/badge/Sponsor-%E2%99%A5-ea4aaa?style=for-the-badge&logo=github)](https://github.com/sponsors/ishandutta2007)  
+  Support directly through the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007)! Every contribution is deeply appreciated.
+
+---
+
+## 📈 Star History 🌟
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Testing-Framework-Integrations-Selenium-Cypress-Playwright&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Testing-Framework-Integrations-Selenium-Cypress-Playwright&type=date&legend=top-left)
+
+---
+
+## 🤝 Contributing 👥
 
 Contributions are always welcome! To add another open-source testing tool or cloud framework platform:
 
@@ -103,6 +132,6 @@ Contributions are always welcome! To add another open-source testing tool or clo
 
 ---
 
-## 📄 License
+## 📄 License ⚖️
 
 This repository is curated and made available under the [CC0 1.0 Universal (Public Domain)](http://creativecommons.org/publicdomain/zero/1.0/) license. Individual tools, libraries, and frameworks retain their respective open-source or proprietary licenses.
